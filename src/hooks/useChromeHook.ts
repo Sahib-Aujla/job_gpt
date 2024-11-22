@@ -5,7 +5,7 @@ export const useChromeStorage = () => {
         },
         getApiKey: async () => {
             const key = await chrome.storage.local.get("openAiApiKey");
-            return key;
+            return key.openAiApiKey;
         }
     }
 }

@@ -25,7 +25,7 @@ const App = () => {
           />
           <Button
             className="px-4 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-500 transition-all"
-            onClick={() => {
+            onClick={async () => {
               if (!apiKey) return;
               setApiKey(apiKey);
 
